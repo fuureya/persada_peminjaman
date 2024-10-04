@@ -10,8 +10,7 @@ class PeminjamanController extends Controller
     public function index(Request $request)
     {
 
-        $data = Peminjaman::all();
-
+        $data = Peminjaman::paginate(10);
         if ($request->search) {
             $data = Peminjaman::where('nama_peminjam', 'like', '%' . $request->search . '%')->get();
         }
