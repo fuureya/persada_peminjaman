@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('peminjaman', function (Blueprint $table) {
             $table->id();
             $table->string('nama_peminjam');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->string('kelas');
             $table->string('jurusan');
             $table->dateTime('tanggal_peminjaman');
