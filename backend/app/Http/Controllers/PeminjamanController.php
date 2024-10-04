@@ -13,6 +13,7 @@ class PeminjamanController extends Controller
         $data = Peminjaman::paginate(10);
         if ($request->search) {
             $data = Peminjaman::where('nama_peminjam', 'like', '%' . $request->search . '%')->get();
+            return response()->json($data);
         }
         return response()->json($data);
     }
