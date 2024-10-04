@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('peminjaman', function (Blueprint $table) {
+        Schema::create('pengembalian', function (Blueprint $table) {
             $table->id();
             $table->string('nama_peminjam');
             $table->string('foto');
             $table->string('kelas');
             $table->string('jurusan');
-            $table->dateTime('tanggal_peminjaman');
-            $table->string('alat_peminjaman');
+            $table->dateTime('tanggal_pengembalian');
+            $table->string('alat_pengembalian');
             $table->string('keperluan');
             $table->timestamps();
         });
