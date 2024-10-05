@@ -20,4 +20,27 @@ class PeminjamanController extends Controller
         }
         return response()->json($data);
     }
+
+    public function store(Request $request)
+    {
+        // Validasi data jika diperlukan
+        $validatedData = $request->validate([
+            'nama_peminjam' => 'required|string',
+            'foto' => 'required|string',
+            'kelas' => 'required|string',
+            'jurusan' => 'required|string',
+            'tanggal_peminjaman' => 'required|date',
+            'alat_peminjaman' => 'required|string',
+            'keperluan' => 'required|string',
+        ]);
+
+        // Insert data ke database
+        $peminjaman = Peminjaman::create($validatedData);
+
+        // Kembalikan respons JSON
+        return response()->json([
+            'success' => true,
+            'data' => $peminjaman,
+        ], 201);
+    }
 }
