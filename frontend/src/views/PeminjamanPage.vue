@@ -3,5 +3,7 @@ import InputForm from '@/components/InputForm.vue';
 </script>
 
 <template>
-    <InputForm for="peminjaman" title="Peminjaman" type="date"  />
+  <div class="bg-slate-950 text-white">
+   
+  </div>
 </template>
