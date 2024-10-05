@@ -13,6 +13,11 @@ const router = createRouter({
     {
       path: '/peminjaman',
       component: PeminjamanPage
+    },
+
+    {
+      path: '/pengembalian',
+      component: PeminjamanPage
     }
 
   ]

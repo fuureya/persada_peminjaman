@@ -4,6 +4,6 @@ import InputForm from '@/components/InputForm.vue';
 
 <template>
   <div class="bg-slate-950 text-white">
-   
+    anjay
   </div>
 </template>

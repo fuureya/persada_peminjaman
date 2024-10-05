@@ -6,15 +6,38 @@ import Fragment from '@/components/Fragment.vue';
     <Fragment>
         <div class="container text-white">
             <div class="logo flex justify-center">
-                <img :src="'../../public/logo.png'" :alt="logo" class="w-32">
+                <img :src="'/logo.png'" :alt="'logo'" class="w-32">
             </div>
-            <div class="layout-card">
-                <div class="grid grid-cols-12 border-red text-black">
-                    <div class="cols-span-6 ">
-                        test
-                    </div>
-                    <div class="cols-span-6 text-black">
-                        test
+            <div class="layout-card mt-10">
+                <div class="grid grid-rows-3 border-red text-black">
+                    <div class="flex justify-between">
+                        <div class="w-1/2 pr-2">
+                            <RouterLink to="/peminjaman">
+                                <div class="bg-white shadow-md rounded-lg p-4">
+                                    <div class="flex justify-center">
+                                        <img :src="'pinjam.png'" :alt="'peminjaman'" class="w-50">
+                                    </div>
+                                    <p class="mt-4 pb-3 text-2xl font-bold text-center text-blue-950">
+                                        Peminjaman
+
+                                    </p>
+                                </div>
+                            </RouterLink>
+                        </div>
+
+                        <div class="w-1/2 pr-2">
+                            <RouterLink to="/pengembalian">
+                                <div class="bg-white shadow-md rounded-lg p-4">
+                                    <div class="flex justify-center">
+                                        <img :src="'kembali.png'" :alt="'pengembalian'" class="w-50">
+                                    </div>
+                                    <p class="mt-4 text-2xl font-bold text-center text-blue-950">
+                                        Pengembalian
+                                    </p>
+                                </div>
+                            </RouterLink>
+                        </div>
+
                     </div>
                 </div>
 
