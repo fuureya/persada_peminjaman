@@ -12,11 +12,11 @@ import InputForm from '@/components/InputForm.vue';
       </div>
       <div class="layout-card mt-16">
         <form>
-          <InputForm to="nama_peminjam" title="Masukkan Nama Peminjam" placeholder="Nama" />
+          <InputForm to="nama_pengembali" title="Masukkan Nama Pengembali" placeholder="Nama" />
           <InputForm to="kelas" title="Masukkan Kelas" placeholder="Kelas" />
           <InputForm to="jurusan" title="Masukkan jurusan" placeholder="Jurusan" />
-          <InputForm to="tanggal_peminjaman" title="Masukkan Tanggal Peminjaman" type="date" />
-          <InputForm to="alat_peminjaman" title="Masukkan Alat Peminjaman" placeholder="Alat" />
+          <InputForm to="tanggal_pengembali" title="Masukkan Tanggal Pengembali" type="date" />
+          <InputForm to="alat_kembali" title="Masukkan Alat Pengembalian" placeholder="Alat" />
           <InputForm to="keperluan" title="Masukkan Keperluan" placeholder="Keperluan" />
           <div class="flex justify-end">
             <Button type="submit" title="Buat Peminjaman" />
