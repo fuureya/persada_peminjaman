@@ -1,7 +1,7 @@
 <template>
-    <div v-if="image" class="flex justify-center">
+    <!-- <div v-if="image" class="flex justify-center">
         <img :src="image" :alt="'gambar preview'" id="preview">
-    </div>
+    </div> -->
     <div class="flex justify-center">
         <WebCamUI :fullscreenState="false" @photoTaken="photoTaken" />
     </div>
@@ -25,6 +25,7 @@ export default {
     components: {
         WebCamUI,
     },
+
     props: {
         autoStart: {
             type: Boolean,
@@ -34,14 +35,15 @@ export default {
     },
     methods: {
         photoTaken(data) {
-            this.image = data.image_data_url;
+            // this.image = data.image_data_url;
+            this.$emit('responseImage', data.image_data_url);
         },
     },
-    setup() {
-        return {
-            image: ref('')
-        }
-    }
+    // setup() {
+    //     return {
+    //         image: ref('')
+    //     }
+    // }
 }
 
 </script>
