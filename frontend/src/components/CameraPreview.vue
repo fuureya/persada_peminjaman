@@ -1,8 +1,8 @@
 <template>
-    <div class="flex justify-center">
+    <div v-if="image" class="flex justify-center">
         <img :src="image" :alt="'gambar preview'" id="preview">
     </div>
-    <div class="flex justify-center">
+    <div v-if="image == ''" class="flex justify-center">
         <WebCamUI :fullscreenState="false" @photoTaken="photoTaken" />
     </div>
 </template>
