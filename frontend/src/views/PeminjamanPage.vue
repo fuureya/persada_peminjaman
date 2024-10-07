@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Button from '@/components/Button.vue';
+import CameraPreview from '@/components/CameraPreview.vue';
 import Fragment from '@/components/Fragment.vue';
 import InputForm from '@/components/InputForm.vue';
 </script>
@@ -18,6 +19,7 @@ import InputForm from '@/components/InputForm.vue';
           <InputForm to="tanggal_peminjaman" title="Masukkan Tanggal Peminjaman" type="date" />
           <InputForm to="alat_peminjaman" title="Masukkan Alat Peminjaman" placeholder="Alat" />
           <InputForm to="keperluan" title="Masukkan Keperluan" placeholder="Keperluan" />
+          <CameraPreview />
           <div class="flex justify-end">
             <Button type="submit" title="Buat Peminjaman" />
           </div>

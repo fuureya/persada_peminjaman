@@ -9,11 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "base64-to-jpg": "^1.0.1",
     "flowbite": "^2.5.2",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
-    "vue-router": "^4.3.3",
-    "vue-web-cam": "^1.9.0"
+    "vue-camera-lib": "^1.0.6",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
