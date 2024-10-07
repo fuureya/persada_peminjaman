@@ -22,9 +22,11 @@ const images = ref(''); // Declare a ref to store the image data
           <InputForm to="alat_peminjaman" title="Masukkan Alat Peminjaman" placeholder="Alat" />
           <InputForm to="keperluan" title="Masukkan Keperluan" placeholder="Keperluan" />
 
-          <img :src="images" :alt="'gambar preview'" id="preview">
+          <div v-if="images" class="flex justify-center">
+            <img :src="images" :alt="'gambar preview'" id="preview">
+          </div>
 
-          <CameraPreview @responseImage="(img) => { images.value = img }" />
+          <CameraPreview @responseImage="(img) => { images = img }" />
           <div class="flex justify-end">
             <Button type="submit" title="Buat Peminjaman" />
           </div>
@@ -33,3 +35,10 @@ const images = ref(''); // Declare a ref to store the image data
     </div>
   </Fragment>
 </template>
+
+<style scoped>
+#preview {
+  margin-bottom: 20px;
+  width: 50%;
+}
+</style>

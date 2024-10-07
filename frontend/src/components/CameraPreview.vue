@@ -11,12 +11,8 @@
 #webcam-ui {
     width: 50%;
 }
-
-#preview {
-    margin-bottom: 20px;
-    width: 50%;
-}
 </style>
+
 <script>
 import { ref } from 'vue';
 import { WebCamUI } from 'vue-camera-lib'
@@ -39,11 +35,7 @@ export default {
             this.$emit('responseImage', data.image_data_url);
         },
     },
-    // setup() {
-    //     return {
-    //         image: ref('')
-    //     }
-    // }
+
 }
 
 </script>
