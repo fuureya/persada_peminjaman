@@ -21,7 +21,7 @@ const images = ref(''); // Declare a ref to store the image data
           <InputForm to="tanggal_peminjaman" title="Masukkan Tanggal Peminjaman" type="date" />
           <InputForm to="alat_peminjaman" title="Masukkan Alat Peminjaman" placeholder="Alat" />
           <InputForm to="keperluan" title="Masukkan Keperluan" placeholder="Keperluan" />
-          <!-- <CameraPreview /> -->
+
           <div v-if="images" class="flex justify-center">
             <img :src="images" :alt="'gambar preview'" id="preview">
           </div>
