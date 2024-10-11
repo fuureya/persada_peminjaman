@@ -35,7 +35,7 @@ const images = ref(''); // Declare a ref to store the image data
     </div>
   </Fragment>
 </template>
-
+<!-- a -->
 <style scoped>
 #preview {
   margin-bottom: 20px;
